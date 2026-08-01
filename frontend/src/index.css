@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===========================
+   THEME
+=========================== */
+
+:root{
+
+  --bg:#0B1120;
+
+  --surface:#111827;
+
+  --surface-light:#1E293B;
+
+  --primary:#2563EB;
+
+  --primary-light:#3B82F6;
+
+  --text:#F8FAFC;
+
+  --text-soft:#CBD5E1;
+
+  --muted:#94A3B8;
+
+  --border:#334155;
+
+}
+
+/* ===========================
+   BASE
+=========================== */
+
+html{
+
+  scroll-behavior:smooth;
+
+}
+
+body{
+
+  margin:0;
+
+  background:var(--bg);
+
+  color:var(--text);
+
+  font-family:'Inter',sans-serif;
+
+  -webkit-font-smoothing:antialiased;
+
+}
+
+#root{
+
+  background:var(--bg);
+
+}
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+.font-heading{
+
+  font-family:'Poppins',sans-serif;
+
+}
+
+.text-primary{
+
+  color:var(--primary);
+
+}
+
+.text-soft{
+
+  color:var(--text-soft);
+
+}
+
+.text-muted{
+
+  color:var(--muted);
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card{
+
+  background:var(--surface);
+
+  border:1px solid var(--border);
+
+  border-radius:20px;
+
+  transition:.35s;
+
+}
+
+.card:hover{
+
+  transform:translateY(-6px);
+
+  box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+
+  padding:14px 26px;
+
+  border-radius:12px;
+
+  font-weight:600;
+
+  transition:.3s;
+
+}
+
+.btn-primary{
+
+  background:var(--primary);
+
+  color:white;
+
+}
+
+.btn-primary:hover{
+
+  background:var(--primary-light);
+
+}
+
+.btn-outline{
+
+  border:1px solid var(--border);
+
+}
+
+.btn-outline:hover{
+
+  background:var(--surface-light);
+
+}
+
+/* ===========================
+   SCROLL ANIMATION
+=========================== */
+
+.reveal{
+
+  opacity:0;
+
+  transform:translateY(40px);
+
+  transition:all .8s ease;
+
+}
+
+.reveal.in{
+
+  opacity:1;
+
+  transform:none;
+
+}
+
+/* ===========================
+   CUSTOM SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+  width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  background:#334155;
+
+  border-radius:50px;
+
+}
+
+::-webkit-scrollbar-track{
+
+  background:#0B1120;
+
+}
+
+/* ===========================
+   SELECTION
+=========================== */
+
+::selection{
+
+  background:#2563EB;
+
+  color:white;
+
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUpRight, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 import useReveal from "../hooks/useReveal";
 import { projects } from "../mock";
@@ -83,11 +83,6 @@ export default function Work() {
                     <Github size={18} />
                     GitHub
                   </a>
-
-                  <button className="inline-flex items-center gap-2 border border-line px-5 py-2 rounded-lg hover:bg-paper-2 transition">
-                    View Details
-                    <ArrowUpRight size={18}/>
-                  </button>
 
                 </div>
 
